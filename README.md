@@ -1,4 +1,4 @@
 picolabs.io
-===========
+==========
 
-Website for Pico Labs
+Pages for picolabs.io
