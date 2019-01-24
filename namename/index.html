@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>name name</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      span:hover { background:aliceblue }
+      span.litup { background:#0099FF }
+      pre.ruleset { border-right: 1px dashed silver; padding-right: 2px; margin-right: 2px }
+      div { float: left; }
+      div.pico { border-top: 1px solid black; border-left: 1px solid black; border-top-left-radius: 15px; text-align:left; padding: 10px; }
+ul.horiz-menu {
+  margin: 0px;
+  padding: 0px;
+  font-size: 70%;
+  list-style-type: none;
+  width: auto;
+}
+ul.horiz-menu li {
+  display: inline-block;
+  width: 10em;
+  text-align: center;
+}
+.testing-rids {
+  list-style: none;
+  padding-left: 0px;
+}
+.testing-rids li ul {
+  display: none;
+}
+.testing-rids li.legend ul {
+  display: block;
+}
+.testing-rids li input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+.testing-queries {
+  list-style-type: circle;
+}
+.testing-queries li {
+  border: 1px solid black;
+  padding: 5px 0 0 5px;
+  margin: 2px 5px;
+}
+.testing-events {
+  list-style-type: disc;
+}
+.testing-events li {
+  border: 1px solid black;
+  padding: 5px 0 0 5px;
+  margin: 2px 5px;
+}
+.testing-events li button {
+  cursor: pointer;
+}
+.legend button {
+  cursor: default;
+  margin-bottom: 0.5em;
+}
+li.legend {
+  padding: 5px 0 0 5px;
+}
+.sky-cloud {
+  margin: 0;
+}
+.sky-cloud button {
+  border: none;
+  padding: 0;
+  background: none;
+  text-decoration: underline;
+  color: #0000EE;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+form { margin-bottom: 1em; }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div>
+    <pre class="ruleset">ruleset <span class="name0" title="ruleset identifier">name</span> {
+  meta {
+    shares __testing, <span class="name1" title="global function name">name</span>
+  }
+  global {
+    __testing = { "queries":
+      [ { "<span class="name2" title='expected in each map in the "queries" array of __testing'>name</span>": "__testing" }
+      , { "<span class="name2" title='expected in each map in the "queries" array of __testing'>name</span>": "<span class="name1" title="global function name">name</span>", "args": [ "<span class="name3" title="function arg name">name</span>" ] }
+      ] , "events":
+      [ { "domain": "<span class="name4" title="event domain name">name</span>", "type": "<span class="name5" title="event type name">name</span>" }
+      , { "domain": "<span class="name4" title="event domain name">name</span>", "type": "<span class="name5" title="event type name">name</span>", "attrs": [ "<span class="name6" title="event attribute name">name</span>" ] }
+      ]
+    }
+    <span class="name1" title="global function name">name</span> = function(<span class="name3" title="function arg name">name</span>){
+      <span class="name3" title="function arg name">name</span>.klog("<span class="name17" title="log message for klog()">name</span>") => <span class="name3" title="function arg name">name</span> | "<span class="name7" title="function default return value">name</span>"
+    }
+  }
+  rule <span class="name8" title="rule name">name</span> {
+    select when <span class="name4" title="event domain name">name</span> <span class="name5" title="event type name">name</span>
+    pre {
+      <span class="name9" title="locally bound name">name</span> = event:attr("<span class="name6" title="event attribute name">name</span>").defaultsTo(<span class="name1" title="global function name">name</span>(<span class="name1" title="global function name">name</span>),"<span class="name10" title="log message for defaultsTo()">name</span>")
+    }
+    send_directive("<span class="name11" title="directive name">name</span>",{"<span class="name12" title="directive options map key">name</span>": <span class="name9" title="locally bound name; value for directive options key">name</span> || "<span class="name13" title="directive options map default value">name</span>"})
+  }
+  rule name_provided {
+    select when <span class="name4" title="event domain name">name</span> <span class="name5" title="event type name">name</span> <span class="name6" title="event attribute name">name</span> re#(.+)# setting(<span class="name14" title="locally bound name">name</span>)
+    send_directive("<span class="name15" title="directive name">name</span>",{"<span class="name16" title="directive options map key">name</span>": <span class="name14" title="locally bound name; value for directive options key">name</span>})
+  }
+}</pre>
+    </div>
+    <div class="pico"><span class="name18" title="pico name">name</span>
+      <ul class="horiz-menu">
+        <li>...</li>
+        <li>Testing</li>
+      </ul>
+      <ul class="testing-rids" style="float:left">
+        <li>...</li>
+        <li><input type="checkbox" checked><span class="name0" title="ruleset identifier">name</span>
+          <button disabled style="border:none;padding:0;background:none;text-decoration:underline;color:#0000EE">edit</button>
+          <ul class="testing-queries">
+            <li><form class="sky-cloud"><button disabled>__testing</button></form></li>
+            <li><form class="sky-cloud"><span class="name20" title="placeholder for function argument in Testing tab"><input placeholder="name"></span> <button disabled><span class="name1" title="global function name">name</span></button></form></li>
+          </ul>
+          <ul class="testing-events">
+            <li><form><button><span class="name4" title="event domain name">name</span>/<span class="name5" title="event type name">name</span></button></form></li>
+            <li><form><span class="name22" title="value provided as event attribute"><input placeholder="name" value="name"></span> <button><span class="name4" title="event domain name">name</span>/<span class="name5" title="event type name">name</span></button></form></li>
+          </ul>
+        </li>
+        <li class="legend">Legend
+          <ul>
+            <li class="testing-queries sky-cloud"><button disabled>query</button></li>
+            <li class="testing-events"><button disabled>event</button></li>
+          </ul>
+        </li>
+      </ul>
+      <pre style="float:left">{ "directives": [ {
+      "options": { "name": "name" },
+      "name": "name",
+      "meta": {
+        "rid": "name",
+        "rule_name": "name",
+        "txn_id": "cjrb5ucye002ciiph4xk57fwt",
+        "eid": "__testing"
+      } }, {
+      "options": { "name": "name" },
+      "name": "name",
+      "meta": {
+        "rid": "name",
+        "rule_name": "name_provided",
+        "txn_id": "cjrb5ucye002ciiph4xk57fwt",
+        "eid": "__testing"
+      } } ] }</pre>
+    </div>
+    <div class="pico"><span class="name18" title="pico name">name</span>
+      <ul class="horiz-menu">
+        <li>...</li>
+        <li>Logging</li>
+      </ul>
+    <pre>2019-01-24T15:40:23-610Z - cjrasajei0029iiphxakkp9w1 - PUUJY5enk338GpoYSnsfb6 - __testing
+2019-01-24T15:40:23.610Z [DEBUG] event received: <span class="name4" title="event domain name">name</span>/<span class="name5" title="event type name">name</span> attributes {"<span class="name6" title="event attribute name">name</span>":"<span class="name22" title="value provided as event attribute">name</span>",...
+2019-01-24T15:40:23.611Z [DEBUG] event added to pico queue: cjr9g6agx000wiiphj7uwmqur
+2019-01-24T15:40:23.611Z [DEBUG] event being processed
+2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier">name</span> -> <span class="name8" title="rule name">name</span>
+2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier">name</span> -> name_provided
+2019-01-24T15:40:23.613Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier">name</span> -> <span class="name8" title="rule name">name</span>
+2019-01-24T15:40:23.614Z [KLOG] <span class="name17" title="log message for klog()">name</span> "[Function]"
+2019-01-24T15:40:23.615Z [DEBUG] fired
+2019-01-24T15:40:23.615Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier">name</span> -> name_provided
+2019-01-24T15:40:23.615Z [DEBUG] fired
+2019-01-24T15:40:23.615Z [DEBUG] event finished processing
+2019-01-24T15:40:23.616Z [DEBUG] {"directives":[{"options":{"<span class="name16" title="directive options map key">name</span>":"<span class="name23" title="value for directive options key">name</span>"},"<span class="name19" title="required key in directive map">name</span>":"<span class="name15" title="directive name">name</span>",</pre>
+    </div>
+    <script type="text/javascript">
+      $("div").on("mouseover","span",function(){
+        $("span.litup").toggleClass("litup");
+        $("span."+$(this).attr("class")).toggleClass("litup");
+      });
+      $("div").on("mouseleave","span",function(){
+        $("span.litup").toggleClass("litup");
+      });
+      $("div").on("click","span",function(){
+        alert($(this).attr("title"));
+      });
+    </script>
+  </body>
+</html>
