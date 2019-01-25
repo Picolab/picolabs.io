@@ -4,7 +4,6 @@
     <title>name name</title>
     <meta charset="UTF-8">
     <style type="text/css">
-      span:hover { background:aliceblue }
       span.litup { background:#0099FF }
       pre.ruleset { border-right: 1px dashed silver; padding-right: 2px; margin-right: 2px }
       div { float: left; }
@@ -78,14 +77,14 @@ form { margin-bottom: 1em; }
   </head>
   <body>
     <div>
-    <pre class="ruleset">ruleset <span class="name0" title="ruleset identifier">name</span> {
+    <pre class="ruleset">ruleset <span class="name0" title="ruleset identifier (RID)">name</span> {
   meta {
-    shares __testing, <span class="name1" title="global function name">name</span>
+    shares __testing, <span class="name1" title="global shared function name">name</span>
   }
   global {
     __testing = { "queries":
       [ { "<span class="name2" title='expected in each map in the "queries" array of __testing'>name</span>": "__testing" }
-      , { "<span class="name2" title='expected in each map in the "queries" array of __testing'>name</span>": "<span class="name1" title="global function name">name</span>", "args": [ "<span class="name3" title="function arg name">name</span>" ] }
+      , { "<span class="name2" title='expected in each map in the "queries" array of __testing'>name</span>": "<span class="name1" title="global shared function name">name</span>", "args": [ "<span class="name3" title="function arg name">name</span>" ] }
       ] , "events":
       [ { "domain": "<span class="name4" title="event domain name">name</span>", "type": "<span class="name5" title="event type name">name</span>" }
       , { "domain": "<span class="name4" title="event domain name">name</span>", "type": "<span class="name5" title="event type name">name</span>", "attrs": [ "<span class="name6" title="event attribute name">name</span>" ] }
@@ -100,13 +99,14 @@ form { margin-bottom: 1em; }
     pre {
       <span class="name9" title="locally bound name">name</span> = event:attr("<span class="name6" title="event attribute name">name</span>").defaultsTo(<span class="name1" title="global function name">name</span>(<span class="name1" title="global function name">name</span>),"<span class="name10" title="log message for defaultsTo()">name</span>")
     }
-    send_directive("<span class="name11" title="directive name">name</span>",{"<span class="name12" title="directive options map key">name</span>": <span class="name9" title="locally bound name; value for directive options key">name</span> || "<span class="name13" title="directive options map default value">name</span>"})
+    send_directive("<span class="name11" title="directive name">name</span>",{"<span class="name12" title="directive options map key">name</span>": <span class="name9" title="locally bound name">name</span> || "<span class="name13" title="directive options map default value">name</span>"})
   }
   rule name_provided {
     select when <span class="name4" title="event domain name">name</span> <span class="name5" title="event type name">name</span> <span class="name6" title="event attribute name">name</span> re#(.+)# setting(<span class="name14" title="locally bound name">name</span>)
-    send_directive("<span class="name15" title="directive name">name</span>",{"<span class="name16" title="directive options map key">name</span>": <span class="name14" title="locally bound name; value for directive options key">name</span>})
+    send_directive("<span class="name15" title="directive name">name</span>",{"<span class="name16" title="directive options map key">name</span>": <span class="name14" title="locally bound name">name</span>})
   }
 }</pre>
+See documentation page <a href="">What's in a name?</a>
     </div>
     <div class="pico"><span class="name18" title="pico name">name</span>
       <ul class="horiz-menu">
@@ -115,11 +115,11 @@ form { margin-bottom: 1em; }
       </ul>
       <ul class="testing-rids" style="float:left">
         <li>...</li>
-        <li><input type="checkbox" checked><span class="name0" title="ruleset identifier">name</span>
+		<li><input type="checkbox" checked><span class="name0" title="ruleset identifier (RID)">name</span>
           <button disabled style="border:none;padding:0;background:none;text-decoration:underline;color:#0000EE">edit</button>
           <ul class="testing-queries">
             <li><form class="sky-cloud"><button disabled>__testing</button></form></li>
-            <li><form class="sky-cloud"><span class="name20" title="placeholder for function argument in Testing tab"><input placeholder="name"></span> <button disabled><span class="name1" title="global function name">name</span></button></form></li>
+            <li><form class="sky-cloud"><span class="name20" title="placeholder for function argument"><input placeholder="name"></span> <button disabled><span class="name1" title="global shared function name">name</span></button></form></li>
           </ul>
           <ul class="testing-events">
             <li><form><button disabled><span class="name4" title="event domain name">name</span>/<span class="name5" title="event type name">name</span></button></form></li>
@@ -134,18 +134,18 @@ form { margin-bottom: 1em; }
         </li>
       </ul>
       <pre style="float:left">{ "directives": [ {
-      "options": { "name": "name" },
-      "name": "name",
+      "options": { "<span class="name12" title="directive options map key">name</span>": "<span class="name22" title="value provided as event attribute">name</span>" },
+      "<span class="name19" title="expected key in each directive map">name</span>": "<span class="name11" title="directive name">name</span>",
       "meta": {
-        "rid": "name",
-        "rule_name": "name",
+        "rid": "<span class="name0" title="ruleset identifier (RID)">name</span>",
+        "rule_name": "<span class="name8" title="rule name">name</span>",
         "txn_id": "cjrb5ucye002ciiph4xk57fwt",
         "eid": "__testing"
       } }, {
-      "options": { "name": "name" },
-      "name": "name",
+      "options": { "<span class="name16" title="directive options map key">name</span>": "<span class="name22" title="value provided as event attribute">name</span>" },
+      "<span class="name19" title="expected key in each directive map">name</span>": "<span class="name15" title="directive name">name</span>",
       "meta": {
-        "rid": "name",
+        "rid": "<span class="name0" title="ruleset identifier (RID)">name</span>",
         "rule_name": "name_provided",
         "txn_id": "cjrb5ucye002ciiph4xk57fwt",
         "eid": "__testing"
@@ -160,26 +160,34 @@ form { margin-bottom: 1em; }
 2019-01-24T15:40:23.610Z [DEBUG] event received: <span class="name4" title="event domain name">name</span>/<span class="name5" title="event type name">name</span> attributes {"<span class="name6" title="event attribute name">name</span>":"<span class="name22" title="value provided as event attribute">name</span>",…
 2019-01-24T15:40:23.611Z [DEBUG] event added to pico queue: cjr9g6agx000wiiphj7uwmqur
 2019-01-24T15:40:23.611Z [DEBUG] event being processed
-2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier">name</span> -> <span class="name8" title="rule name">name</span>
-2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier">name</span> -> name_provided
-2019-01-24T15:40:23.613Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier">name</span> -> <span class="name8" title="rule name">name</span>
+2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier (RID)">name</span> -> <span class="name8" title="rule name">name</span>
+2019-01-24T15:40:23.613Z [DEBUG] rule added to schedule: <span class="name0" title="ruleset identifier (RID)">name</span> -> name_provided
+2019-01-24T15:40:23.613Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier (RID)">name</span> -> <span class="name8" title="rule name">name</span>
 2019-01-24T15:40:23.614Z [KLOG] <span class="name17" title="log message for klog()">name</span> "[Function]"
 2019-01-24T15:40:23.615Z [DEBUG] fired
-2019-01-24T15:40:23.615Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier">name</span> -> name_provided
+2019-01-24T15:40:23.615Z [DEBUG] rule selected: <span class="name0" title="ruleset identifier (RID)">name</span> -> name_provided
 2019-01-24T15:40:23.615Z [DEBUG] fired
 2019-01-24T15:40:23.615Z [DEBUG] event finished processing
-2019-01-24T15:40:23.616Z [DEBUG] {"directives":[{"options":{"<span class="name16" title="directive options map key">name</span>":"<span class="name23" title="value for directive options key">name</span>"},"<span class="name19" title="required key in directive map">name</span>":"<span class="name15" title="directive name">name</span>",…</pre>
+2019-01-24T15:40:23.616Z [DEBUG] {"directives":[{"options":{"<span class="name12" title="directive options map key">name</span>":"<span class="name22" title="value provided as event attribute">name</span>"},"<span class="name19" title="expected key in each directive map">name</span>":"<span class="name11" title="directive name">name</span>",…</pre>
     </div>
     <script type="text/javascript">
       $("div").on("mouseover","span",function(){
         $("span.litup").toggleClass("litup");
         $("span."+$(this).attr("class")).toggleClass("litup");
+        $("span.litup input").focus();
       });
       $("div").on("mouseleave","span",function(){
+        $("span.litup input").blur();
         $("span.litup").toggleClass("litup");
       });
       $("div").on("click","span",function(){
         alert($(this).attr("title"));
+      });
+      $("div").on("mouseover","span input",function(){
+        $(this).focus();
+      });
+      $("div").on("mouseleave","span input",function(){
+        $(this).blur();
       });
     </script>
   </body>
