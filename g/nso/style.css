@@ -5,11 +5,12 @@
 
 body {
   width: 100%;
+  background-color: #333333;
 }
 
 .hero {
-  background-image: url(tags.jpg);
-  height: 70%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(51, 51, 51, 1)), url(tags.jpg);
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +21,7 @@ body {
   text-align: center;
   position: absolute;
   width: 100%;
-  color: #0000FF;
+  color: #2591CD;
   height: auto;
   margin-top: 200px;
 }
@@ -49,8 +50,8 @@ a {
   width: 200px;
   font-weight: bold;
   padding: 10px;
-  color: #0000FF;
-  border: 4px solid #0000FF;
+  color: #2591CD;
+  border: 4px solid #2591CD;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -68,17 +69,18 @@ a {
   width: 200px;
   font-weight: bold;
   padding: 10px;
-  color: #0000FF;
-  border: 4px solid #0000FF;
-  border-radius: 8px;
+  color: #2591CD;
+  border: 4px solid #2591CD;
+  border-radius: 5px;
   text-align: center;
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-out, color: 0.2s ease-out;
+  background-color: #333333;
 }
 
 .btn:hover,.btn:active {
-  background-color: #0000FF;
+  background-color: #2591CD;
   color: black;
   transition: background-color 0.3s ease-in, color: 0.3s ease-in;
 }
@@ -100,3 +102,19 @@ a {
     font-size: 1.4em;
   }
 }
+
+#about {
+  margin-top: 20vh;
+  color: white;
+  text-align: center;
+}
+
+#about img {
+  width: 423px;
+  height: 378px;
+}
+
+#about p {
+  margin: 0;
+}
+
