@@ -103,18 +103,8 @@ a {
   }
 }
 
-#about {
+#safeandmine {
   margin-top: 20vh;
-  color: white;
-  text-align: center;
-}
-
-#about img {
-  width: 423px;
-  height: 378px;
-}
-
-#about p {
-  margin: 0;
+  height: 100vh;
 }
 
